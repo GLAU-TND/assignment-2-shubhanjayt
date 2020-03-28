@@ -44,4 +44,14 @@ public class MyBinarySearchTree {
         this.root = root;
     }
 
+    public void preOrder(TreeNode temp) {
+        if (temp == null) {
+            return;
+        } else {
+//            System.out.println(temp.getData());
+            myQueue.enqueue(temp.getData());
+            preOrder(temp.getLeft());
+            preOrder(temp.getRight());
+        }
+    }
 }
