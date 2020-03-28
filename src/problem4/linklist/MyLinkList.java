@@ -48,4 +48,14 @@ public class MyLinkList {
         this.last = last;
     }
 
+    public Node search(int data) {
+        var current = first;
+        while (current != null) {
+            if (current.getData() == data) {
+                return current;
+            }
+            current = current.getNext();
+        }
+        return null;
+    }
 }
