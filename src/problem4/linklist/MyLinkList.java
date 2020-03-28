@@ -10,4 +10,17 @@ public class MyLinkList {
             first = last = node;
             return;
         }
+        last.setNext(node);
+        last = node;
     }
+
+    public void deleteFirst() {
+        if (first == null) {
+            first = last = null;
+            return;
+        }
+        var second = first.getNext();
+        first.setNext(null);
+        first = second;
+    }
+}
