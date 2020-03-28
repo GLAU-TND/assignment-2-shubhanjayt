@@ -17,4 +17,28 @@ public class Student {
         this.appearing = appearing;
     }
 
+    public int getAppearing() {
+        return appearing;
+    }
+
+    public void setAppearing(int appearing) {
+        this.appearing = appearing;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getBacklogcount() {
+        return backlogcount;
+    }
+
+    public void setBacklogcount(int backlogcount) {
+        this.backlogcount = backlogcount;
+    }
 }
+
