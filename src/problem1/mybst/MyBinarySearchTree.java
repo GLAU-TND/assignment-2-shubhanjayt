@@ -41,5 +41,27 @@ public class MyBinarySearchTree {
     public int getMlevel() {
         return mlevel;
     }
+
+    public void diaplay(TreeNode node, int level) {
+        if (node != null) {
+            if (node.getLeft() == null)
+                c++;
+            if (mlevel < level) {
+                System.out.println("Data --> " + node.getData());
+                mlevel = level;
+            }
+            diaplay(node.getLeft(), level + 1);
+            diaplay(node.getRight(), level + 1);
+        }
+    }
+
+    public void d2() {
+        System.out.println("Number Of Empty Left Child --> " + c);
+    }
+
+    public TreeNode getRoot() {
+        return root;
+    }
+
 }
 
