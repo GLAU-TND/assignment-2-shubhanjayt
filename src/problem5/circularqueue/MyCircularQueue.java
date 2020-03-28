@@ -15,4 +15,5 @@ public class MyCircularQueue {
     public MyCircularQueue() {
         rear = front = null;
     }
+
 }
