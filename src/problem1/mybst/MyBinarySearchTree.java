@@ -38,5 +38,8 @@ public class MyBinarySearchTree {
         }
     }
 
+    public int getMlevel() {
+        return mlevel;
+    }
 }
 
